@@ -78,3 +78,64 @@ header nav ul {
           align-items: center;
   z-index: 99999;
 }
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+header nav ul button {
+  padding: 7px 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#cb47a0), to(#6a2bff));
+  background: linear-gradient(90deg, #cb47a0, #6a2bff);
+}
+
+.home h1 {
+  color: white;
+}
+
+.home h1 span {
+  color: #09f5c4;
+}
+
+.home p {
+  color: #a0a0a0;
+}
+
+.home .btn1 {
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-right: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#cb47a0), to(#6a2bff));
+  background: linear-gradient(90deg, #cb47a0, #6a2bff);
+}
+
+.home .btn2 {
+  padding: 6px 20px;
+  border: 1px solid #cb47a0;
+  background: transparent;
+  border-top-color: #09f5c4;
+  border-left-color: #09f5c4;
+  color: white;
+}
+
+.home .btn2:hover {
+  border: 1px solid #09f5c4;
+  border-top-color: #cb47a0;
+  border-left-color: #cb47a0;
+}
