@@ -216,3 +216,167 @@ header {
     }
   }
   
+  .collection {
+    h1 {
+      color: $textColor;
+      font-size: 3em;
+      span {
+        color: $brandColor;
+      }
+    }
+    p {
+      color: $smallColor;
+    }
+    button {
+      padding: 7px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+    }
+  
+    .box1 {
+      position: relative;
+      background: #2e2f404d;
+      backdrop-filter: blur(4px);
+      z-index: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 0;
+        transform: translate(50%, 50%);
+        background: #002e8360;
+        filter: blur(2em);
+        z-index: -3;
+        width: 50%;
+        height: 30%;
+      }
+      img {
+        transform: translateY(-40%);
+      }
+    }
+    .color2 {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 0;
+        transform: translate(50%, 50%);
+        background: #ffffff2a;
+        filter: blur(2em);
+        z-index: -3;
+        width: 50%;
+        height: 30%;
+      }
+    }
+    .color3 {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 0;
+        transform: translate(50%, 50%);
+        background: #9900ff2a;
+        filter: blur(2em);
+        z-index: -3;
+        width: 50%;
+        height: 30%;
+      }
+    }
+    h4 {
+      color: $textColor;
+    }
+  }
+  
+  .shop {
+    h1 {
+      color: $textColor;
+      span {
+        color: $brandColor;
+      }
+    }
+    button {
+      padding: 10px 50px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      background: rgba(128, 128, 128, 0.247);
+      transition: all 2s;
+      &:hover {
+        background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+      }
+    }
+    h5 {
+      color: $textColor;
+    }
+    h4 {
+      margin: 0;
+      color: $brandColor;
+    }
+    p {
+      margin: 0;
+      color: $smallColor;
+    }
+    .btn2 {
+      padding: 10px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      margin-right: 10px;
+      transition: all 0.5s;
+      background: linear-gradient(90deg, $bgColor, rgb(43, 47, 255));
+    }
+    .col-md-3 {
+      padding: 20px;
+      background: #2e2f404d;
+      backdrop-filter: blur(4px);
+      i {
+        color: $brandColor;
+        font-size: 2em;
+      }
+    }
+    .active {
+      padding: 7px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+    }
+  }
+  .brand {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -25%;
+      top: -10%;
+      width: 60%;
+      height: 70vh;
+      background-color: #cb479f85;
+      border-radius: 50%;
+      filter: blur(10em);
+      z-index: -2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: -25%;
+      top: -5%;
+      width: 60%;
+      height: 70vh;
+      background: #00ff8533;
+      border-radius: 50%;
+      filter: blur(10em);
+      z-index: -2;
+    }
+    .row {
+      background: #d4ecff4d;
+      backdrop-filter: blur(12px);
+      height: 238px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
