@@ -85,3 +85,134 @@ header {
     }
   }
 }
+
+
+.home {
+    h1 {
+      color: $textColor;
+      span {
+        color: $brandColor;
+      }
+    }
+    p {
+      color: $smallColor;
+    }
+    .btn1 {
+      padding: 10px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      margin-right: 10px;
+      background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+    }
+    .btn2 {
+      padding: 6px 20px;
+      border: 1px solid $bgColor;
+      background: transparent;
+      border-top-color: $brandColor;
+      border-left-color: $brandColor;
+      color: $textColor;
+      &:hover {
+        border: 1px solid $brandColor;
+        border-top-color: $bgColor;
+        border-left-color: $bgColor;
+      }
+    }
+  
+    .circle {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+    }
+  
+    .bg2 {
+      position: absolute;
+      top: 0;
+      z-index: -9;
+      width: 100%;
+    }
+  
+    .text {
+      transform: translateY(100px);
+      opacity: 0;
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    .text2 {
+      transform: translateY(-100px);
+      opacity: 0;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+  }
+  
+  .feedback {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -25%;
+      top: -5%;
+      width: 60%;
+      height: 70vh;
+      background-color: #cb479f85;
+      border-radius: 50%;
+      filter: blur(10em);
+      z-index: -2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: -25%;
+      top: -5%;
+      width: 60%;
+      height: 70vh;
+      background: #00ff8533;
+      border-radius: 50%;
+      filter: blur(10em);
+      z-index: -2;
+    }
+    .row {
+      background: #d4ecff4d;
+      backdrop-filter: blur(12px);
+      height: 238px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .col-md-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: $textColor;
+          font-size: 61px;
+          font-weight: 500;
+        }
+        p {
+          color: $smallColor;
+          font-size: 25px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+  .more {
+    h1 {
+      color: $textColor;
+      font-size: 3em;
+      font-weight: bold;
+      span {
+        color: $brandColor;
+      }
+    }
+    p {
+      color: $smallColor;
+    }
+    button {
+      padding: 7px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+    }
+  }
+  
