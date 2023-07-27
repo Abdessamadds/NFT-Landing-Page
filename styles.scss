@@ -425,3 +425,56 @@ header {
       }
     }
   }
+
+  .Nft {
+    .container {
+      position: relative;
+    }
+    img {
+      position: absolute;
+      top: -60%;
+      z-index: 0;
+    }
+    h1 {
+      color: $textColor;
+      font-weight: bold;
+      z-index: 99;
+      span {
+        color: $brandColor;
+      }
+    }
+    p {
+      color: $smallColor;
+      z-index: 99;
+  
+    }
+    button {
+      padding: 7px 25px;
+      border: none;
+      outline: none;
+      color: $textColor;
+      background: linear-gradient(90deg, $bgColor, rgb(106, 43, 255));
+      z-index: 99;
+  
+    }
+  }
+  
+  footer {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, #cb479f4b, #00ff843b);
+      height: 12vh;
+      backdrop-filter: blur(12px);
+    }
+    a {
+      text-decoration: none;
+      color: $smallColor;
+      transition: all 0.4s;
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+  
