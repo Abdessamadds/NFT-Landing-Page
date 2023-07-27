@@ -477,4 +477,34 @@ header {
       }
     }
   }
-  
+  @media (max-width: 668px) {
+    header{
+      nav {
+        justify-content: space-between;
+        padding: 0 5%;
+        .burger {
+          display: block;
+        }
+        .nav-links {
+          position: absolute;
+          width: 50%;
+          height: 86vh;
+          top: 14vh;
+          right: -6%;
+          z-index: 9999;
+          background-color: #53535305;
+          backdrop-filter: blur(1em);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateX(100%);
+          li {
+            margin: 8% 0;
+          }
+        }
+        .nav-active {
+          transform: translateX(0%);
+        }
+      }
+    }
